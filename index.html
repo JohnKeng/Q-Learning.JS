@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+        table{
+            border-collapse: collapse;
+            border: 1px solid black;
+            margin: 30px auto;
+        }
+        td{
+            border: 1px solid black;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+        button {
+            float: right;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        pre.log {
+            height: 360px;
+            width: 940px;
+            overflow-y: auto;
+            background: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="btns">
+            <button class="qLearning">訓練 Q</button>
+            <button class="walkMaze">走路</button>
+            <span class="message"></span>
+            <div><pre class="log"></pre>
+            </div>
+        </div>
+        <div id="root"></div>
+    </div>
+    <script src="Q.js"></script>
+</body>
+</html>
